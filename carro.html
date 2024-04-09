@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/0f3283a3db.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Content here -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #036635"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="explorar.html">Café</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="explorar.html">Explorar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comprar.html">Comprar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="carro.html"
+                >
+                  <button type="button" class="btn btn-dark">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Label Carro de compras -->
+        <div class="container">
+            <h1>Carro de compras</h1>
+            
+
+            <div>
+                <!-- Col 8 y 4 -->
+                <div class="row">
+                    <div class="col-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Productos</h5>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="text">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Producto</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="text">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Precio</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="text">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Cantidad</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="text">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Subtotal</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                        
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Cupón promocional" aria-label="Cupón promocional" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><button type="button" class="btn btn-dark"> Aplicar cupón</button></span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Total</h5>
+                                <p class="card-text">Subtotal: $0</p>
+                                <!-- break line -->
+                                <hr> </hr>
+                                <h6 class="card-title">Total: $0</h6>
+                            </div>
+                        </div>
+                            <span class="input-group-text" id="basic-addon2"><button type="button" class="btn btn-warning">Continuar con tu compra</button></span>
+                    </div>
+            </div>
+        </div>
+        
+      <!----------->
+    </div>
+
+    <!-- Popper y Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
