@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Caffé</title>
+    <title>Brew Reserve</title>
     
     <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/0f3283a3db.js" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
         style="background-color: #036635"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="explorar.html"><i class="fa-solid fa-seedling"></i></a>
+          <a class="navbar-brand" href="explorar.html">Brew Reserve <i class="fa-solid fa-seedling"></i></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -119,10 +119,30 @@
               actualizaciones.</label
             >
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
         </form>
       </div>
     </div>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">¡Mensaje enviado!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Es broma, esta funcionalidad no está disponible en este momento. Por favor, inténtelo de nuevo más tarde.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+  
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Popper y Bootstrap JS-->
     <script
