@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/0f3283a3db.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <!-- Contenido HTML -->
+
+    <!-- Barra de navegación -->
+
+    <div class="container-expand-md">
+        <nav class="navbar navbar-expand-lg sticky-top border-bottom border-body " style="background-color: rgb(0, 98, 65);" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="testInicio.html"><i class="fa-solid fa-seedling"></i></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="testInicio.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="testProductos.html">Productos</a>
+                        </li>
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="testContacto.html">Contacto</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Historia
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="testHistoriaChemex.html">Chemex</a></li>
+                            <li><a class="dropdown-item" href="testHistoriaPrensa.html">Prensa Francesa</a></li>
+                            <li><a class="dropdown-item" href="testHistoriaMoka.html">Moka/Cafetera Italiana</a></li>
+                            <li><a class="dropdown-item" href="testHistoriaSifon.html">Sifón</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="d-flex justify-content-end" role="search">
+                    <a href="testCarrito.html"><button class="btn btn-outline-dark" type="submit">Carrito</button></a>
+                    
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Contenido de la página -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col" style="margin: 10px;">
+                <h2>☕️ Bienvenidos a la tienda preferida de los amantes del <b>café</b></h2>
+                <hr>
+                <h3>Productos destacados</h3>
+
+               
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="background-color: black;">
+                        <img src="/Recursos/chemex.jpg" class="card-img-top" alt="..." style="opacity: 50%;">
+
+                        <div class="carousel-caption d-none d-md-block text-start">
+                            <h2>Chemex</h2>
+                            <h4>Some representative placeholder content for the first slide.</h4>
+                            <button type="button" class="btn btn-dark" style="background-color: rgb(0, 98, 65);">Explorar más</button>
+                        </div>
+                        </div>
+                        <div class="carousel-item" style="background-color: black;">
+                        <img src="/Recursos/francesa.jpg" class="d-block w-100" alt="..." style="opacity: 50%;">
+                        <div class="carousel-caption d-none d-md-block text-start">
+                            <h2>Prensa Francesa</h2>
+                            <h4>Some representative placeholder content for the first slide.</h4>
+                            <button type="button" class="btn btn-dark" style="background-color: rgb(0, 98, 65);">Explorar más</button>
+                        </div>
+                        </div>
+                        <div class="carousel-item" style="background-color: black;">
+                            <img src="/Recursos/syphon.jpg" class="d-block w-100" alt="..." style="opacity: 50%;">
+                            <div class="carousel-caption d-none d-md-block text-start">
+                            <h2>Sifón Japonés</h2>
+                            <h4>Some representative placeholder content for the first slide.</h4>
+                            <button type="button" class="btn btn-dark" style="background-color: rgb(0, 98, 65);">Explorar más</button>
+                        </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
